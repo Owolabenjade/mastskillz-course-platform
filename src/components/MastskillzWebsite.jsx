@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
-import { ChevronDown, ChevronRight, Edit, Upload, FileText, Film, Image, Save, X } from 'lucide-react';
-import { useModuleContext } from '../context/ModuleContext';
+import React from 'react';
 import ModuleSidebar from './ModuleSidebar';
 import PageContent from './PageContent';
 
 const MastskillzWebsite = () => {
   return (
-    <div className="flex flex-col min-h-screen bg-gray-50">
+    <div className="flex flex-col min-h-screen bg-gray-50 overflow-auto">
       {/* Header */}
       <header className="bg-white border-b border-gray-200 shadow-sm">
         <div className="container mx-auto px-4">
@@ -32,7 +30,7 @@ const MastskillzWebsite = () => {
         </div>
       </header>
       
-      <div className="flex flex-1">
+      <div className="flex flex-1 overflow-hidden">
         {/* Module sidebar */}
         <ModuleSidebar />
         
